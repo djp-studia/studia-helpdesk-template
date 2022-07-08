@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body x-data="{ 'issues': [1, 2, 3, 4, 5] }" class="w-[1200px] mx-auto py-8 space-y-4">
+    <div class="flex space-x-4">
+        <div class="flex-grow flex">
+            <label for="search"
+                class="border-y border-l border-gray-200 px-4 py-1 rounded-l-lg bg-gray-100">Cari</label>
+            <input id="search"
+                class="flex-grow border-gray-200 border px-2 py-1 rounded-r-lg outline-none bg-gray-50 text-sm focus:border-sky-500"
+                type="text" placeholder="Search...">
+        </div>
+        <div class="border px-4 py-1 rounded-lg bg-green-600 border text-green-50 font-semibold">New Tiket</div>
+    </div>
+    <div
+        class="container container-md w-full mx-auto rounded-lg border overflow-hidden bg-gradient-to-r from-sky-600 to-sky-500 text-gray-700">
+        <table class="w-full table-auto text-left mb-8">
+            <thead>
+                <tr class="border-b [&>th]:p-4 text-white">
+                    <th class="w-[80px]">#</th>
+                    <th>Judul</th>
+                    <th class="w-1/5">Assignee</th>
+                    <th class="w-1/5">Status</th>
+                </tr>
+            </thead>
+            <tbody class="[&_td]:p-4
+                          [&>tr:hover]:bg-gray-50 bg-white
+                          [&>tr>td:nth-child(1)]:font-semibold
+                          [&>tr>td:nth-child(2)>a]:line-clamp-1
+                          [&>tr>td:nth-child(2)>a:hover]:text-sky-700
+                          [&>tr>td:nth-child(2)]:font-semibold
+                          text-sm
+            ">
+                <tr class="border-b last:border-0">
+                    <td>#1</td>
+                    <td>
+                        <a href="" class="text-base">Tidak bisa melanjutkan modul pembelajaran</a>
+                        <span class="text-sm font-normal text-gray-500">dilaporkan pada 1 Januari 2022 oleh <a
+                                href="">John Doe</a></span>
+                    </td>
+                    <td>Agung Pratama</td>
+                    <td class="space-x-2">
+                        <span class="bg-rose-300 px-2 py-1 text-rose-900 rounded-xl font-semibold">open</span>
+                        <span class="bg-yellow-300 px-2 py-1 text-yellow-900 rounded-xl font-semibold">on process</span>
+                        <span class="bg-emerald-300 px-2 py-1 text-emerald-900 rounded-xl font-semibold">close</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
