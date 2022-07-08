@@ -625,6 +625,14 @@ video {
   width: 20%;
 }
 
+.max-w-\[1200px\] {
+  max-width: 1200px;
+}
+
+.max-w-\[1000px\] {
+  max-width: 1000px;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -742,6 +750,10 @@ video {
 
 .to-sky-500 {
   --tw-gradient-to: #0ea5e9;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .py-8 {
